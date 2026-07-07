@@ -1,0 +1,10 @@
+# Pinned dependencies for the ML Final Project.
+# Install with:  pip install -r requirements.txt
+numpy==2.5.1
+pandas==3.0.3
+scikit-learn==1.9.0
+matplotlib==3.11.0
+scipy==1.18.0
+pytest==9.1.1
+pytest-cov==7.1.0
+mypy==2.1.0

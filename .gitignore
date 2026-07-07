@@ -1,0 +1,42 @@
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Generated figures (reproducible via run_all.py)
+figures/
+
+# Large raw data (fetch via download_data.sh)
+data/
+download_data.sh
+statement/
+pyproject.toml
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
