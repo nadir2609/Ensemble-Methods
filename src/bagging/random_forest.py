@@ -19,7 +19,7 @@ def _train_one_tree(job: _TreeJob) -> tuple[DecisionTree, np.ndarray]:
         in_bag, oob = bootstrap_sample(n, seed)
     else:
         in_bag, oob = np.arange(n), np.empty(0, dtype=np.int64)
-    tree = DecisionTree(random_state=seed, **tree_kwargs)  
+    tree = DecisionTree(random_state=seed, **tree_kwargs)  # type: ignore[arg-type]
     tree.fit(X[in_bag], y[in_bag])
     return tree, oob
 
