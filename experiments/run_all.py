@@ -8,8 +8,10 @@ import time
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from experiments import (  
+from experiments import (
     adaboost_scaling,
+    head_to_head,
+    noise_robustness,
     rf_scaling,
     scaling,
 )
@@ -18,6 +20,8 @@ EXPERIMENTS = {
     1: ("Baseline (tree/stump/sklearn)", scaling.run),
     2: ("AdaBoost scaling", adaboost_scaling.run),
     3: ("Random Forest scaling", rf_scaling.run),
+    4: ("Head-to-head (5-fold CV)", head_to_head.run),
+    5: ("Noise robustness", noise_robustness.run),
 }
 
 
