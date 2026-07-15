@@ -15,6 +15,7 @@ from experiments import (
     noise_robustness,
     rf_scaling,
     scaling,
+    unsupervised_analysis,
 )
 
 EXPERIMENTS = {
@@ -24,6 +25,7 @@ EXPERIMENTS = {
     4: ("Head-to-head (5-fold CV)", head_to_head.run),
     5: ("Noise robustness", noise_robustness.run),
     6: ("Bias-variance decomposition", bias_variance.run),
+    7: ("Unsupervised analysis (PCA/K-Means/DBSCAN)", unsupervised_analysis.run),
 }
 
 
